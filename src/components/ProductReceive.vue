@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-xl py-8 font-semibold">คุณต้องการรับสินค้าด้วยวิธีใด</p>
+    <p class="text-2xl font-semibold my-8">คุณต้องการรับสินค้าด้วยวิธีใด</p>
 
     <div
       v-for="service in serviceOrder"

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="confirm py-3 px-4 rounded-lg mb-10 w-full text-white bg-primary"
+    class="confirm py-3 px-4 rounded-lg mb-10 w-full text-white bg-primary text-xl font-semibold my-8"
     @click="openModal"
   >
     ยืนยันการสั่งซื้อล่วงหน้า
@@ -38,7 +38,7 @@
             >
               <DialogTitle
                 as="h4"
-                class="font-medium leading-6 text-gray-900 confirms text-black"
+                class="font-medium leading-6 text-gray-900 confirms text-2xl font-semibold my-8"
               >
                 <div class="flex justify-center">
                   <SubmitImage />

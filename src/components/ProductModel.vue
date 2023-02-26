@@ -1,5 +1,5 @@
 <template>
-  <p class="text-xl py-8 font-semibold">สี</p>
+  <p class="text-2xl font-semibold my-8 ">สี</p>
   <div class="grid grid-cols-2 gap-4 text-center">
     <div
       class="border py-7 px-5 rounded-lg"

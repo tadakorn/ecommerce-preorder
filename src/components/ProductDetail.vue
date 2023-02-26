@@ -1,9 +1,9 @@
 <template>
   <div>
-    <p class="text-3xl font-semibold pb-4" :class="'font-size-2.5rem'">
+    <p class="text-3xl md:text-4xl font-semibold mb-10" :class="'font-size-2.5rem'">
       ซื้อ {{ orderStore.productSelected.name }}
     </p>
-    <p class="text-xl font-semibold">รุ่น</p>
+    <p class="text-2xl font-semibold mb-8">รุ่น</p>
 
     <div
       v-for="product in orderStore.productList"
@@ -16,7 +16,7 @@
       }"
       @click="clickProduct(product)"
     >
-      <div class="font-extrabold">{{ product.name }}</div>
+      <div class="font-semibold">{{ product.name }}</div>
       <div>฿{{ formatNumber(product.model[0].data[0].price) }}</div>
     </div>
   </div>

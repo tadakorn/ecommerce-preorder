@@ -107,7 +107,9 @@ export default {
       const payload = {
         id: this.orderStore.sizeSelected.id,
       };
-      axios.post("https://interview.com7.in/api/pre-order", payload);
+      axios.post("https://interview.com7.in/api/pre-order", payload).then((res) => {
+        console.log(res.data)
+      });
 
       this.isOpen = true;
     },

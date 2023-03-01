@@ -7,7 +7,6 @@ export const useOrderStore = defineStore("order", {
     productSelected: {
       name: "",
       model: [],
-      image_url: "",
     },
     modelSelected: {
       color: "",
@@ -34,7 +33,6 @@ export const useOrderStore = defineStore("order", {
     setProduct(new_product) {
       this.productSelected.name = new_product.name;
       this.productSelected.model = new_product.model;
-      this.productSelected.image_url = new_product.model[0].data[0].image_url;
       this.setModel(new_product.model[0]);
     },
     setModel(new_model) {
